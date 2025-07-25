@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitReads</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+        <h1>LitReads</h1>
+    </header>
+    <main>
+        <p>What are you reading at the moment?</p>
+        <form action="">
+            <input type="text" name="Title" placeholder="Book Title" value="">
+            <input type="text" name="" placeholder="Author" value="">
+            <input type="text" name="" placeholder="Publisher" value="">
+
+            <button id="addBookButton" type="submit" action="/POST">Add Book</button>
+
+        </form>
+    </main>
+    <section id="books" class="books">
+        <h2 class="text-3xl font-bold">Book List</h2>
+        <ul>
+            <li>
+                <h3>Book Title 1</h3>
+                <p>Author: Author Name 1</p>
+                <p>Publisher: Publisher Name 1</p>
+                <button class="faveBook" id="faveBook">Heart</button>
+                <button>X</button>
+            </li>
+
+            <!-- More books can be added here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LitReads Book List by @athen</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
