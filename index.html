@@ -15,19 +15,21 @@
     </header>
     <main>
         <p>What are you reading at the moment?</p>
-        <form action="">
+        <div>
             <input type="text" name="Title" placeholder="Book Title" value="">
-            <input type="text" name="" placeholder="Author" value="">
-            <input type="text" name="" placeholder="Publisher" value="">
+            <input type="text" name="Author" placeholder="Author" value="">
+            <input type="text" name="Publisher" placeholder="Publisher" value="">
 
-            <button id="addBookButton" type="submit" action="/POST">Add Book</button>
-
-        </form>
+            <button id="addBookButton" type="button" name="button">Add Book</button>
+        </div>
+        <span class="error"></span>
+        
     </main>
     <section id="books" class="books">
         <h2 class="text-3xl font-bold">Book List</h2>
-        <ul>
+        <ul id="booksList" class="booksList">
             <li>
+                <!-- li generated with DOM & JS -->
                 <h3>Book Title 1</h3>
                 <p>Author: Author Name 1</p>
                 <p>Publisher: Publisher Name 1</p>
@@ -35,7 +37,6 @@
                 <button>X</button>
             </li>
 
-            <!-- More books can be added here -->
         </ul>
     </section>
 
