@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="forest">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LitReads</title>
     <link rel="stylesheet" href="style.css">
-    <link href="./output.css" rel="stylesheet">
+    <link href="public/output.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,24 +14,50 @@
         <h1>LitReads</h1>
     </header>
     <main>
-        <p>What are you reading at the moment?</p>
+        
         <form id="addBookForm" class="addBookForm">
-            <input id="addNewTitle" name="Title" placeholder="Book Title" required>
-            <input id="addNewAuthor" type="text" name="Author" placeholder="Author" required>
-            <input id="addNewPublisher" type="text" name="Publisher" placeholder="Publisher" required>
+            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+                <legend class="fieldset-legend">What are you reading at the moment?</legend>
 
-            <button id="addBookButton" type="submit">Add Book</button>
+                <label class="label">Title</label>
+                <input id="addNewTitle"type="text" class="input" placeholder="Type book's title" required/>
+
+                <label class="label">Author</label>
+                <input id="addNewAuthor" type="text" class="input" placeholder="Type book's author" required/>
+
+                <label class="label">Publisher</label>
+                <input id="addNewPublisher" type="text" class="input" placeholder="Type book's publisher" required/>
+                
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" id="addBookButton" type="submit">Add
+                    Book</button>
+                </fieldset>
         </form>
         <span class="error"></span>
-        
+
     </main>
     <section id="books" class="books">
-        <h2 class="text-3xl font-bold">Book List</h2>
-        <ul id="booksList" class="booksList">
-                <!-- li generated with DOM & JS: h3, 2 p, 2 button: fave, delete -->
-                
-            </li>
-
+        <ul id="booksList" class="booksList list bg-base-100 rounded-box shadow-md">
+            <h2 class="p-4 pb-2 text-xs opacity-60 tracking-wide">Book List</h2>
+            <ul class="list bg-base-100 rounded-box shadow-md">
+  
+  <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Most played songs this week</li>
+  
+  <li class="list-row">
+    <div><img class="size-10 rounded-box" src="https://placehold.co/40x40/000000/FFF?text=DL"/></div>
+    <div>
+      <div>Dio Lupa</div>
+      <div class="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
+    </div>
+    <button class="btn btn-square btn-ghost">
+      <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M6 3L20 12 6 21 6 3z"></path></g></svg>
+    </button>
+    <button class="btn btn-square btn-ghost">
+      <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></g></svg>
+    </button>
+  </li>
+  
+</ul>
+            <!-- li generated with DOM & JS: h3, 2 p, 2 button: fave, delete -->
         </ul>
     </section>
 
