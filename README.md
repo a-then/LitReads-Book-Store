@@ -1,49 +1,52 @@
 # LitReads-Book-Store
 
-LitReads-Book-Store is a simple web application for browsing books. This project demonstrates basic HTML, CSS, and JavaScript integration. It uses Tailwind CSS and daisyUI for rapid and modern UI development.
+LitReads-Book-Store is a simple web application for browsing books. This project demonstrates basic HTML, CSS, JavaScript and API integration. It uses Tailwind CSS and daisyUI for rapid and modern UI development.
 
 ## Features
 
-- Responsive layout with header, main content, and footer
+- Responsive layout
+- Book API
 - Styled using [Tailwind CSS](https://tailwindcss.com/) and [daisyUI](https://daisyui.com/)
-- Custom styles in `styles.css`
-- Basic JavaScript functionality in `app.js`
+- JavaScript functionality in `app.js`
 
 ## Getting Started
 
 ### Prerequisites
 
-No installation is required. All files are static and can be run in any modern web browser.
+Requires Node.js to and npm rum
 
 ### Running the Web App
 
-1. Clone or download this repository to your local machine.
-2. Open the `index.html` file in your preferred web browser:
-
-   - On macOS, you can double-click the file or right-click and choose "Open With" > "Safari" (or another browser).
-   - Alternatively, you can run the following command in your terminal:
-
-     ```bash
-     open index.html
-     ```
-
-3. You should see the LitReads-Book-Store homepage with styled content and a working JavaScript console log.
-
+- First, clone the repository to your local machine:
+```git clone https://github.com/a-then/LitReads-Book-Store```
+- Install dependencies:
+```npm install```
+- Build css styles if you make any style changes:
+```npx @tailwindcss/cli -i style.css -o public/output.css```
+- Open the `index.html` file in your preferred web browser.
+- Alternatively, you can use the Go Live extension on vscode.
+     
 ## Project Structure
 
-- `index.html` — Main HTML file (includes Tailwind CSS and daisyUI)
-- `styles.css` — Custom styles
-- `app.js` — JavaScript functionality
-- `README.md` — Project documentation
+litreads-book-store/
+├──public/
+    └──output.css
+├── app.js
+├── index.html
+├── README.md
+└── style.css
 
-## Customization
-
-Feel free to modify the HTML, CSS, or JavaScript files to add more features or change the design.
 
 ## License
 
 This project is open source and available under the MIT License.
 
+### Contributing
+
+- Feel free to open issues or submit pull requests for improvements.
+- Follow best practices for HTML, CSS, and JavaScript.
+- Keep code clean and well-documented.
+
 ## Author
 
-Created by Athen.
+Created by [@a-then](https://github.com/a-then)
