@@ -29,7 +29,7 @@ async function fetchBooks() {
             bookItem.classList.add('list-row'); // Add a class for styling
             bookItem.innerHTML = `
             <div>
-            <img class="size-10 rounded-box" src="https://placehold.co/40x40/000000/FFF?text=${book.author[0]}"/></div>
+            <img class="size-10 rounded-box" src="https://placehold.co/40x40/${setImgColor()}/FFF?text=${book.author[0]}"/></div>
             <div>
             <h3>${book.title}</h3><p class="text-xs uppercase font-semibold opacity-60">Author: ${book.author}</p><p>Publisher: ${book.publisher}</p> 
             </div>
@@ -103,3 +103,11 @@ addBookForm.addEventListener("submit", async (event) => {
 // TODO: delete a book from the bookstore
 // TODO: fave a book
 // TODO: display books in a grid layout
+
+// helper functions
+const setImgColor = () => {
+    const themeColors = ["#1fb854", '#1eb88e', '#1e8bb8', '#1e5eb8', '#1e3fb8', '#1e3fb8', '#b81e3f', '#b81e5e', '#b81e8b', '#b81eb8', '#b81eb8', '#b81eb8'];
+
+  const randomColor = Math.floor(Math.random()* themeColors.length)
+    return themeColors[randomColor].replace('#', ''); 
+}
