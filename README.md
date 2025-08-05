@@ -9,11 +9,16 @@ LitReads-Book-Store is a simple web application for browsing books. This project
 - Styled using [Tailwind CSS](https://tailwindcss.com/) and [daisyUI](https://daisyui.com/)
 - JavaScript functionality in `app.js`
 
+## Demo
+
+Hosted with Github Pages: a-then.github.io/LitReads-Book-Store/
+![Project Output](assets/Screenshot.png)
+
 ## Getting Started
 
 ### Prerequisites
 
-Requires Node.js to and npm rum
+Requires Node.js to and npm
 
 ### Running the Web App
 
