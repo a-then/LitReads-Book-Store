@@ -85,7 +85,7 @@ addBookForm.addEventListener("submit", async (event) => {
         // Adding user's new book data to the book list
         newBook.innerHTML = `
         <div> 
-        <img class="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/1@94.webp"/>
+        <img class="size-10 rounded-box" src="https://placehold.co/40x40/${setImgColor()}/FFF?text=${book.author[0]}"/>
         </div>
         <div>
         <h3>${payload.title}</h3>
