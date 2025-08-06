@@ -1,5 +1,5 @@
 {
-  "name": "LitReads-Book-Store",
+  "name": "litreads",
   "version": "1.0.0",
   "description": "A project using Tailwind CSS and DaisyUI",
   "main": "index.js",
@@ -15,5 +15,4 @@
   },
   "author": "a-then",
   "license": ""
-  
 }
